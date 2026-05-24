@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GradeManager</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="bar">
+    <div class="dots">
+      <div class="dot" style="background:#f38ba8"></div>
+      <div class="dot" style="background:#a6e3a1"></div>
+      <div class="dot" style="background:#f9e2af"></div>
+    </div>
+    <div class="fp">GradeManager/<span>index.html</span></div>
+    <div id="flash">&#10003; <span id="fmsg"></span></div>
+  </div>
+
+  <div id="app">
+    <div id="sb">
+      <div id="sbh">Students
+        <div class="sbts">
+          <button class="bts on" id="snb" onclick="ss('name')">A–Z</button>
+          <button class="bts"    id="sgb" onclick="ss('gpa')">GPA</button>
+        </div>
+      </div>
+      <div id="sbl"></div>
+      <div id="sba">
+        <input id="nin" placeholder="New student…" onkeydown="if(event.key==='Enter')addStu()"/>
+        <button class="btn" onclick="addStu()">+</button>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="tabs">
+        <button class="tab on" onclick="tab('grades')">&#128202; grades.js</button>
+        <button class="tab"    onclick="tab('add')">&#10133; addScore.js</button>
+        <button class="tab"    onclick="tab('edit')">&#9999;&#65039; edit.js</button>
+      </div>
+      <div id="content">
+
+        <div class="panel on" id="pg">
+          <div id="hero">
+            <div>
+              <div class="hn" id="hn"></div>
+              <div class="hi" id="hi"></div>
+              <div id="cats"></div>
+            </div>
+            <div style="text-align:center">
+              <div id="gc"><div class="gl" id="gl"></div><div class="gn" id="gn"></div></div>
+              <div class="gs">weighted GPA</div>
+            </div>
+          </div>
+          <div class="sl">All assignments</div>
+          <div id="al"></div>
+        </div>
+
+        <div class="panel" id="pa">
+          <div class="ft">Add score</div>
+          <div class="fd">Adding to: <span id="at">—</span></div>
+          <div class="fg"><div class="flb">Category</div><select id="ac2"></select></div>
+          <div class="fg"><div class="flb">Assignment name</div><input id="aa" placeholder="e.g. HW 3, Quiz 2"/></div>
+          <div class="fg"><div class="flb">Score (0–100)</div><input id="as2" type="number" min="0" max="100" placeholder="85"/></div>
+          <button class="btn" onclick="addScore()">+ Add score</button>
+          <div class="gp"><div class="pr">
+            <span class="pn" id="ppn">—</span>
+            <div style="flex:1" id="ppb"></div>
+            <span class="pg" id="ppg">—</span>
+          </div></div>
+        </div>
+
+        <div class="panel" id="pe">
+          <div class="ft">Edit student</div>
+          <div class="fd">Editing: <span id="et">—</span></div>
+          <div class="fg"><div class="flb">Student name</div>
+            <div class="row">
+              <input id="eni" placeholder="Student name" onkeydown="if(event.key==='Enter')saveName()"/>
+              <button class="btn" onclick="saveName()">Save</button>
+            </div>
+          </div>
+          <div class="sl" style="margin-top:20px">Assignments</div>
+          <div id="eal"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
