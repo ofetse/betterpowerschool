@@ -19,10 +19,13 @@ function mkCats(a, q, m, f) {
 
 const defaults = {
   students: [
-    { id: 1, name: 'Alex Rivera',  categories: mkCats(82, 92, 85, 90) },
-    { id: 2, name: 'Jordan Kim',   categories: mkCats(68, 78, 72, 68) },
-    { id: 3, name: 'Morgan Lee',   categories: mkCats(96, 100, 96, 94) },
-    { id: 4, name: 'Sam Patel',    categories: mkCats(58, 58, 62, 57) },
+    { id: 1, name: 'Salahdine Echchoujaa',  categories: mkCats(82, 92, 85, 90) },
+    { id: 2, name: 'Samoin',        categories: mkCats(68, 78, 72, 68) },
+    { id: 3, name: 'nubaid',        categories: mkCats(96, 100, 96, 94) },
+    { id: 4, name: 'Ty kyfiuk',     categories: mkCats(58, 58, 62, 57) },
+    { id: 5, name: 'Niaan Patel',   categories: mkCats(58, 48, 60, 89) },
+    { id: 6, name: 'Ethan Curran',    categories: mkCats(58, 58, 62, 57) },
+    { id: 7, name: 'Jayden Domenjoz',    categories: mkCats(58, 58, 62, 57) },
   ],
   sel: 1, sortK: 'name', curTab: 'grades', nid: 5
 };
