@@ -26,8 +26,8 @@ const defaults = {
     { id: 5, name: 'Niaan Patel',   categories: mkCats(58, 48, 60, 89) },
     { id: 6, name: 'Ethan Curran',    categories: mkCats(58, 58, 62, 57) },
     { id: 7, name: 'Jayden Domenjoz',    categories: mkCats(58, 58, 62, 57) },
-       { id: 7, name: 'Ritvik Mehrotra',    categories: mkCats(58, 58, 62, 57) },
-  ],
+    { id: 7, name: 'Ritvik Mehrotra',    categories: mkCats(58, 58, 62, 57) },
+  ]
   sel: 1, sortK: 'name', curTab: 'grades', nid: 5
 };
 
